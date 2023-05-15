@@ -1,5 +1,6 @@
 package net.khamm.practicemod;
 
+import net.khamm.practicemod.block.ModBlocks;
 import net.khamm.practicemod.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -32,6 +33,7 @@ public class PracticeMod {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 
