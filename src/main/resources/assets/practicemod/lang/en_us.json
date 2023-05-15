@@ -4,5 +4,10 @@
 
   "block.practicemod.citrine_block": "Citrine Block",
   "block.practicemod.raw_citrine_block": "Raw Citrine Block",
-  "block.practicemod.citrine_ore": "Citrine Ore"
+  "block.practicemod.citrine_ore": "Citrine Ore",
+  "block.practicemod.deepslate_citrine_ore": "Deepslate Citrine Ore",
+  "block.practicemod.endstone_citrine_ore": "Endstone Citrine Ore",
+  "block.practicemod.netherrack_citrine_ore": "Netherrack Citrine Ore",
+
+  "itemGroup.practicetab": "Practice Mod"
 }
