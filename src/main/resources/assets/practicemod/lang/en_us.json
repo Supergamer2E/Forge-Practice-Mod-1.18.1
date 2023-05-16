@@ -1,6 +1,8 @@
 {
   "item.practicemod.citrine": "Citrine",
   "item.practicemod.raw_citrine": "Raw Citrine",
+  "item.practicemod.dowsing_rod": "Dowsing Rod",
+  "item.practicemod.cucumber": "Cucumber",
 
   "block.practicemod.citrine_block": "Citrine Block",
   "block.practicemod.raw_citrine_block": "Raw Citrine Block",
@@ -8,6 +10,9 @@
   "block.practicemod.deepslate_citrine_ore": "Deepslate Citrine Ore",
   "block.practicemod.endstone_citrine_ore": "Endstone Citrine Ore",
   "block.practicemod.netherrack_citrine_ore": "Netherrack Citrine Ore",
+  "block.practicemod.speedy_block": "Speedy Block",
 
-  "itemGroup.practicetab": "Practice Mod"
+  "itemGroup.practicetab": "Practice Mod",
+
+  "item.practicemod.dowsing_rod.no_valuables": "No Valuables Found!"
 }

@@ -1,6 +1,7 @@
 package net.khamm.practicemod.block;
 
 import net.khamm.practicemod.PracticeMod;
+import net.khamm.practicemod.block.custom.SpeedyBlock;
 import net.khamm.practicemod.item.ModCreativeModeTab;
 import net.khamm.practicemod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -41,6 +42,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> ENDSTONE_CITRINE_ORE = registerBlock("endstone_citrine_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.PRACTICE_TAB);
+
+    public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
+            () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.PRACTICE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

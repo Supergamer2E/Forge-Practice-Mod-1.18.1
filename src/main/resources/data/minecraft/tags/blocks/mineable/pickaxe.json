@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "practicemod:citrine_ore",
+    "practicemod:citrine_block",
+    "practicemod:raw_citrine_block",
+    "practicemod:deepslate_citrine_ore",
+    "practicemod:endstone_citrine_ore",
+    "practicemod:netherrack_citrine_ore"
+  ]
+}
