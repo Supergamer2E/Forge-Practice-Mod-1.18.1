@@ -1,5 +1,6 @@
 package net.khamm.practicemod.item.custom;
 
+import net.khamm.practicemod.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -55,7 +56,7 @@ public class DowsingRodItem extends Item {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if (Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.practicemod.dowsing_rod.tooltop.shift"));
+            pTooltipComponents.add(new TranslatableComponent("tooltip.practicemod.dowsing_rod.tooltip.shift"));
         } else {
             pTooltipComponents.add(new TranslatableComponent("tooltip.practicemod.dowsing_rod.tooltip"));
         }
@@ -67,7 +68,6 @@ public class DowsingRodItem extends Item {
     }
 
     private boolean isValuableBlock(Block block) {
-        return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE
-                || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE;
+        return ModTags.Blocks.DOWSING_ROD_VALUABLES.contains(block);
     }
 }
