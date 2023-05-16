@@ -3,6 +3,7 @@
   "item.practicemod.raw_citrine": "Raw Citrine",
   "item.practicemod.dowsing_rod": "Dowsing Rod",
   "item.practicemod.cucumber": "Cucumber",
+  "item.practicemod.coal_coke": "Coal Coke",
 
   "block.practicemod.citrine_block": "Citrine Block",
   "block.practicemod.raw_citrine_block": "Raw Citrine Block",
@@ -14,5 +15,8 @@
 
   "itemGroup.practicetab": "Practice Mod",
 
-  "item.practicemod.dowsing_rod.no_valuables": "No Valuables Found!"
+  "item.practicemod.dowsing_rod.no_valuables": "No Valuables Found!",
+  "tooltip.practicemod.dowsing_rod.tooltip.shift": "Right Click to Find Valuables!",
+  "tooltip.practicemod.dowsing_rod.tooltip": "Press §eSHIFT§r for More Information!",
+  "tooltip.practicemod.block.speedy_block": "I am speed!"
 }
