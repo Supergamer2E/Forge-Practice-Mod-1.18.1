@@ -6,6 +6,12 @@
     "practicemod:raw_citrine_block",
     "practicemod:deepslate_citrine_ore",
     "practicemod:endstone_citrine_ore",
-    "practicemod:netherrack_citrine_ore"
+    "practicemod:netherrack_citrine_ore",
+    "practicemod:speedy_block",
+    "practicemod:citrine_stairs",
+    "practicemod:citrine_wall",
+    "practicemod:citrine_slab",
+    "practicemod:citrine_fence",
+    "practicemod:citrine_fence_gate"
   ]
 }
