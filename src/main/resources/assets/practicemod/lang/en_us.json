@@ -13,6 +13,12 @@
   "block.practicemod.netherrack_citrine_ore": "Netherrack Citrine Ore",
   "block.practicemod.speedy_block": "Speedy Block",
 
+  "block.practicemod.citrine_slab": "Citrine Slab",
+  "block.practicemod.citrine_stairs": "Citrine Stairs",
+  "block.practicemod.citrine_fence": "Citrine Fence",
+  "block.practicemod.citrine_fence_gate": "Citrine Fence Gate",
+  "block.practicemod.citrine_wall": "Citrine Wall",
+
   "itemGroup.practicetab": "Practice Mod",
 
   "item.practicemod.dowsing_rod.no_valuables": "No Valuables Found!",

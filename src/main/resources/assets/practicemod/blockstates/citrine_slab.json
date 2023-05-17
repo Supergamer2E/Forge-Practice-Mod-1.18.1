@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "practicemod:block/citrine_slab"
+    },
+    "type=double": {
+      "model": "practicemod:block/citrine_block"
+    },
+    "type=top": {
+      "model": "practicemod:block/citrine_slab_top"
+    }
+  }
+}
