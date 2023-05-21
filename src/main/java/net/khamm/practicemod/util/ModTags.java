@@ -10,7 +10,7 @@ import net.minecraftforge.common.Tags;
 
 public class ModTags {
     public static class Blocks {
-        public static final Tags.IOptionalNamedTag<Block> DOWSING_ROD_VALUABLES
+        public static Tags.IOptionalNamedTag<Block> DOWSING_ROD_VALUABLES
                 = tag("dowsing_rod_valuables");
 
         private static Tags.IOptionalNamedTag<Block> tag(String name) {
@@ -24,6 +24,7 @@ public class ModTags {
 
     public static class Items {
         public static final Tags.IOptionalNamedTag<Item> CITRINE_GEMS = forgeTag("gems/citrine");
+
         private static Tags.IOptionalNamedTag<Item> tag(String name) {
             return ItemTags.createOptional(new ResourceLocation(PracticeMod.MOD_ID, name));
         }
