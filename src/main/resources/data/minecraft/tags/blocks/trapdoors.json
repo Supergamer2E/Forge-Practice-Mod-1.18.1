@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "practicemod:ebony_door",
     "practicemod:ebony_trapdoor"
   ]
 }

@@ -67,10 +67,11 @@ public class DowsingRodItem extends Item {
     }
 
     private boolean isValuableBlock(Block block) {
-        return block.toString().equals("Block{pracricemod:citrine_ore}") ||
-                block.toString().equals("Block{pracricemod:netherrack_citrine_ore}") ||
-                block.toString().equals("Block{pracricemod:endstone_citrine_ore}") ||
-                block.toString().equals("Block{pracricemod:deepslate_citrine_ore}") ||
+        System.out.println(block.toString());
+        return block.toString().equals("Block{practicemod:citrine_ore}") ||
+                block.toString().equals("Block{practicemod:netherrack_citrine_ore}") ||
+                block.toString().equals("Block{practicemod:endstone_citrine_ore}") ||
+                block.toString().equals("Block{practicemod:deepslate_citrine_ore}") ||
                 block.toString().equals("Block{minecraft:redstone_ore}") ||
                 block.toString().equals("Block{minecraft:diamond_ore}") ||
                 block.toString().equals("Block{minecraft:iron_ore}") ||

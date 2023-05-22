@@ -5,6 +5,17 @@
   "item.practicemod.cucumber": "Cucumber",
   "item.practicemod.coal_coke": "Coal Coke",
 
+  "item.practicemod.citrine_pickaxe": "Citrine Pickaxe",
+  "item.practicemod.citrine_axe": "Citrine Axe",
+  "item.practicemod.citrine_shovel": "Citrine Shovel",
+  "item.practicemod.citrine_hoe": "Citrine Hoe",
+  "item.practicemod.citrine_sword": "Citrine Sword",
+
+  "item.practicemod.citrine_helmet": "Citrtine Helmet",
+  "item.practicemod.citrine_chestplate": "Citrine Chestplate",
+  "item.practicemod.citrine_leggings": "Citrine Leggings",
+  "item.practicemod.citrine_boots": "Citrine Boots",
+
   "block.practicemod.citrine_block": "Citrine Block",
   "block.practicemod.raw_citrine_block": "Raw Citrine Block",
   "block.practicemod.citrine_ore": "Citrine Ore",
@@ -23,6 +34,9 @@
   "block.practicemod.citrine_pressure_plate": "Citrine Pressure Plate",
   "block.practicemod.ebony_door": "Ebony Door",
   "block.practicemod.ebony_trapdoor": "Ebony Trapdoor",
+
+  "block.practicemod.pink_rose": "Pink Rose",
+  "block.practicemod.potted_pink_rose": "Potted Pink Rose",
 
   "itemGroup.practicetab": "Practice Mod",
 

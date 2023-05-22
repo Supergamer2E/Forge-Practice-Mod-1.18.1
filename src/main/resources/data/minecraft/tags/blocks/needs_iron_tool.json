@@ -12,6 +12,8 @@
     "practicemod:citrine_wall",
     "practicemod:citrine_slab",
     "practicemod:citrine_fence",
-    "practicemod:citrine_fence_gate"
+    "practicemod:citrine_fence_gate",
+    "practicemod:citrine_button",
+    "practicemod:citrine_pressure_plate"
   ]
 }
