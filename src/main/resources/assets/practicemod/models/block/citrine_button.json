@@ -1,0 +1,6 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": "practicemod:block/citrine_block"
+  }
+}

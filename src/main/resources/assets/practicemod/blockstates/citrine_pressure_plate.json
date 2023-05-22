@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "practicemod:block/citrine_pressure_plate" },
+    "powered=true": { "model": "practicemod:block/citrine_pressure_plate_down" }
+  }
+}

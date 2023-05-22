@@ -3,6 +3,8 @@ package net.khamm.practicemod;
 import net.khamm.practicemod.block.ModBlocks;
 import net.khamm.practicemod.item.ModItems;
 import net.khamm.practicemod.util.ModTags;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -39,9 +41,15 @@ public class PracticeMod {
         ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
+        eventBus.addListener(this::clientSetup);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+    }
+
+    private void clientSetup(final FMLClientSetupEvent event) {
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.EBONY_DOOR.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.EBONY_TRAPDOOR.get(), RenderType.translucent());
     }
 
     private void setup(final FMLCommonSetupEvent event) {

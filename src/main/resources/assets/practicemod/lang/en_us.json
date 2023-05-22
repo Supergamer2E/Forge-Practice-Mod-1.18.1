@@ -19,6 +19,11 @@
   "block.practicemod.citrine_fence_gate": "Citrine Fence Gate",
   "block.practicemod.citrine_wall": "Citrine Wall",
 
+  "block.practicemod.citrine_button": "Citrine Button",
+  "block.practicemod.citrine_pressure_plate": "Citrine Pressure Plate",
+  "block.practicemod.ebony_door": "Ebony Door",
+  "block.practicemod.ebony_trapdoor": "Ebony Trapdoor",
+
   "itemGroup.practicetab": "Practice Mod",
 
   "item.practicemod.dowsing_rod.no_valuables": "No Valuables Found!",
