@@ -6,6 +6,6 @@ import net.minecraft.tags.BlockTags;
 
 public class ModTagsRegistration {
     public static void registerBlockTags() {
-        ModTags.Blocks.DOWSING_ROD_VALUABLES = BlockTags.createOptional(new ResourceLocation(PracticeMod.MOD_ID, "dowsing_rod_valuables"));
+        ModTags.Blocks.DOWSING_ROD_VALUABLES = BlockTags.createOptional(new ResourceLocation(PracticeMod.MOD_ID, "data/practicemod/tags/blocks/dowsing_rod_valuables.json"));
     }
 }

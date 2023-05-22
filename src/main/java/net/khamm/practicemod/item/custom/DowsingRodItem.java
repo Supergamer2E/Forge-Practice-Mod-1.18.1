@@ -67,7 +67,26 @@ public class DowsingRodItem extends Item {
     }
 
     private boolean isValuableBlock(Block block) {
-        return ModTags.Blocks.DOWSING_ROD_VALUABLES.contains(block);
+        return block.toString().equals("Block{pracricemod:citrine_ore}") ||
+                block.toString().equals("Block{pracricemod:netherrack_citrine_ore}") ||
+                block.toString().equals("Block{pracricemod:endstone_citrine_ore}") ||
+                block.toString().equals("Block{pracricemod:deepslate_citrine_ore}") ||
+                block.toString().equals("Block{minecraft:redstone_ore}") ||
+                block.toString().equals("Block{minecraft:diamond_ore}") ||
+                block.toString().equals("Block{minecraft:iron_ore}") ||
+                block.toString().equals("Block{minecraft:coal_ore}") ||
+                block.toString().equals("Block{minecraft:gold_ore}") ||
+                block.toString().equals("Block{minecraft:lapis_ore}") ||
+                block.toString().equals("Block{minecraft:emerald_ore}") ||
+                block.toString().equals("Block{minecraft:copper_ore}") ||
+                block.toString().equals("Block{minecraft:deepslate_coal_ore}") ||
+                block.toString().equals("Block{minecraft:deepslate_iron_ore}") ||
+                block.toString().equals("Block{minecraft:deepslate_gold_ore}") ||
+                block.toString().equals("Block{minecraft:deepslate_redstone_ore}") ||
+                block.toString().equals("Block{minecraft:deepslate_lapis_ore}") ||
+                block.toString().equals("Block{minecraft:deepslate_diamond_ore}") ||
+                block.toString().equals("Block{minecraft:deepslate_emerald_ore}") ||
+                block.toString().equals("Block{minecraft:deepslate_copper_ore}");
     }
 }
 
