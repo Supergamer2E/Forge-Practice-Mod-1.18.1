@@ -1,8 +1,11 @@
 package net.khamm.practicemod.item.custom;
 
+import net.khamm.practicemod.item.ModItems;
+import net.khamm.practicemod.util.InventoryUtil;
 import net.khamm.practicemod.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -36,6 +39,11 @@ public class DowsingRodItem extends Item {
                 if (isValuableBlock(blockBelow)) {
                     outputValuableCoordinates(positionClicked.below(i), player, blockBelow);
                     foundBlock = true;
+
+                    if (InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET.get())) {
+                        addNbtToDataTablet(player, positionClicked.below(i), blockBelow);
+                    }
+
                     break;
                 }
             }
@@ -50,6 +58,16 @@ public class DowsingRodItem extends Item {
                 (player) -> player.broadcastBreakEvent(player.getUsedItemHand()));
 
         return super.useOn(pContext);
+    }
+
+    private void addNbtToDataTablet(Player player, BlockPos pos, Block blockBelow) {
+        ItemStack dataTablet = player.getInventory().getItem(InventoryUtil.getFirstInventoryIndex(player, ModItems.DATA_TABLET.get()));
+
+        CompoundTag nbtData = new CompoundTag();
+        nbtData.putString("practicemod.last_ore", "Found " + blockBelow.asItem().getRegistryName().toString() + " at (" +
+                pos.getX() + ", " + pos.getY() + ", " + pos.getZ() + ")");
+
+        dataTablet.setTag(nbtData);
     }
 
     @Override

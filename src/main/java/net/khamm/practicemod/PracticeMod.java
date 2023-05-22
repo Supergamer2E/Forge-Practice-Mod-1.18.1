@@ -2,6 +2,7 @@ package net.khamm.practicemod;
 
 import net.khamm.practicemod.block.ModBlocks;
 import net.khamm.practicemod.item.ModItems;
+import net.khamm.practicemod.painting.ModPaintings;
 import net.khamm.practicemod.util.ModTags;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -40,6 +41,8 @@ public class PracticeMod {
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+
+        ModPaintings.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);

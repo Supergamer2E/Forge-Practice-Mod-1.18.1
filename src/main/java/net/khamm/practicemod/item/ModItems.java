@@ -1,10 +1,7 @@
 package net.khamm.practicemod.item;
 
 import net.khamm.practicemod.PracticeMod;
-import net.khamm.practicemod.item.custom.CoalCokeItem;
-import net.khamm.practicemod.item.custom.DowsingRodItem;
-import net.khamm.practicemod.item.custom.LevitationSwordItem;
-import net.khamm.practicemod.item.custom.ModArmorItem;
+import net.khamm.practicemod.item.custom.*;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -69,6 +66,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> MAGIC_DUST = ITEMS.register("magic_dust",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB)));
+
+    public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
+            () -> new DataTabletItem(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB).stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
