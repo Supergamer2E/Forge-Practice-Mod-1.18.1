@@ -16,6 +16,8 @@
   "item.practicemod.citrine_leggings": "Citrine Leggings",
   "item.practicemod.citrine_boots": "Citrine Boots",
 
+  "item.practicemod.magic_dust": "Magic Dust",
+
   "block.practicemod.citrine_block": "Citrine Block",
   "block.practicemod.raw_citrine_block": "Raw Citrine Block",
   "block.practicemod.citrine_ore": "Citrine Ore",
@@ -37,6 +39,9 @@
 
   "block.practicemod.pink_rose": "Pink Rose",
   "block.practicemod.potted_pink_rose": "Potted Pink Rose",
+
+  "block.practicemod.winter_window": "Winter Window",
+  "block.practicemod.citrine_lamp": "Citrine Lamp",
 
   "itemGroup.practicetab": "Practice Mod",
 

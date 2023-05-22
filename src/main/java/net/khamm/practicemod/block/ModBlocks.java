@@ -1,6 +1,7 @@
 package net.khamm.practicemod.block;
 
 import net.khamm.practicemod.PracticeMod;
+import net.khamm.practicemod.block.custom.CitrineLampBlock;
 import net.khamm.practicemod.block.custom.SpeedyBlock;
 import net.khamm.practicemod.item.ModCreativeModeTab;
 import net.khamm.practicemod.item.ModItems;
@@ -101,6 +102,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_PINK_ROSE = registerBlockWithoutBlockItem("potted_pink_rose",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.PINK_ROSE,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
+
+    public static final RegistryObject<Block> WINTER_WINDOW = registerBlock("winter_window",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()), ModCreativeModeTab.PRACTICE_TAB);
+
+    public static final RegistryObject<Block> CITRINE_LAMP = registerBlock("citrine_lamp",
+            () -> new CitrineLampBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(2f).requiresCorrectToolForDrops().lightLevel(
+                            (state) -> state.getValue(CitrineLampBlock.CLICKED) ? 15 : 0)), ModCreativeModeTab.PRACTICE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
