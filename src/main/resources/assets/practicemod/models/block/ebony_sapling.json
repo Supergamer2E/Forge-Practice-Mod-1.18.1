@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "practicemod:block/ebony_sapling"
+  }
+}

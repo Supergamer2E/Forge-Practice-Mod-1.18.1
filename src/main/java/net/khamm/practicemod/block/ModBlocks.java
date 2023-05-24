@@ -8,6 +8,7 @@ import net.khamm.practicemod.block.custom.SpeedyBlock;
 import net.khamm.practicemod.item.ModCreativeModeTab;
 import net.khamm.practicemod.item.ModItems;
 import net.khamm.practicemod.sound.ModSounds;
+import net.khamm.practicemod.world.feature.tree.EbonyTreeGrower;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -155,6 +156,27 @@ public class ModBlocks {
                     return 5;
                 }
             }, ModCreativeModeTab.PRACTICE_TAB);
+
+    public static final RegistryObject<Block> EBONY_LEAVES = registerBlock("ebony_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            }, ModCreativeModeTab.PRACTICE_TAB);
+
+    public static final RegistryObject<Block> EBONY_SAPLING = registerBlock("ebony_sapling",
+            () -> new SaplingBlock(new EbonyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.PRACTICE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
