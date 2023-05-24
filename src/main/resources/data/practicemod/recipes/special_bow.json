@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X#",
+    "O #",
+    " X#"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:stick"
+    },
+    "#": {
+      "item": "minecraft:string"
+    },
+    "O": {
+      "item": "practicemod:citrine"
+    }
+  },
+  "result": {
+    "item": "practicemod:special_bow"
+  }
+}

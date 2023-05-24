@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "XOX",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "practicemod:raw_citrine"
+    },
+    "X": {
+      "item": "practicemod:citrine"
+    },
+    "O": {
+      "item": "minecraft:rabbit_foot"
+    }
+  },
+  "result": {
+    "item": "practicemod:speedy_block",
+    "count": 8
+  }
+}

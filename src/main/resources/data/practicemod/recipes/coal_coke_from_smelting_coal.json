@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:coal"
+  },
+  "result": "practicemod:coal_coke",
+  "experience": 0.7,
+  "cookingtime": 400
+}

@@ -1,7 +1,9 @@
 package net.khamm.practicemod.item;
 
 import net.khamm.practicemod.PracticeMod;
+import net.khamm.practicemod.block.ModBlocks;
 import net.khamm.practicemod.item.custom.*;
+import net.khamm.practicemod.sound.ModSounds;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -69,6 +71,17 @@ public class ModItems {
 
     public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
             () -> new DataTabletItem(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB).stacksTo(1)));
+
+    public static final RegistryObject<Item> SPECIAL_BOW = ITEMS.register("special_bow",
+            () -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB).durability(500)));
+
+    public static final RegistryObject<Item> CUCUMBER_SEEDS = ITEMS.register("cucumber_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.CUCUMBER_PLANT.get(),
+                    new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB)));
+
+    public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new RecordItem(4, ModSounds.BAR_BRAWL,
+                    new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB).stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

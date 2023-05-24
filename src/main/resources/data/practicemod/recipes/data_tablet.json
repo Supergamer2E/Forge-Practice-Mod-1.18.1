@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#T#",
+    "XOX",
+    "#V#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "minecraft:redstone"
+    },
+    "O": {
+      "item": "minecraft:glass_pane"
+    },
+    "T": {
+      "item": "practicemod:dowsing_rod"
+    },
+    "V": {
+      "item": "practicemod:citrine"
+    }
+  },
+  "result": {
+    "item": "practicemod:data_tablet",
+    "count": 1
+  }
+}

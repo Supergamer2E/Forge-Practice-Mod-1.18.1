@@ -18,6 +18,12 @@
 
   "item.practicemod.magic_dust": "Magic Dust",
   "item.practicemod.data_tablet": "Data Tablet",
+  "item.practicemod.special_bow": "Special Bow",
+
+  "item.practicemod.cucumber_seeds": "Cucumber Seeds",
+
+  "item.practicemod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.practicemod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
   "block.practicemod.citrine_block": "Citrine Block",
   "block.practicemod.raw_citrine_block": "Raw Citrine Block",
@@ -44,10 +50,20 @@
   "block.practicemod.winter_window": "Winter Window",
   "block.practicemod.citrine_lamp": "Citrine Lamp",
 
+  "block.practicemod.cucumber_plant": "Cucumber Plant",
+
+  "block.practicemod.ebony_log": "Ebony Log",
+  "block.practicemod.ebony_planks": "Ebony Planks",
+  "block.practicemod.ebony_wood": "Ebony Wood",
+  "block.practicemod.stripped_ebony_log": "Stripped Ebony Log",
+  "block.practicemod.stripped_ebony_wood": "Stripped Ebony Wood",
+
   "itemGroup.practicetab": "Practice Mod",
 
   "item.practicemod.dowsing_rod.no_valuables": "No Valuables Found!",
   "tooltip.practicemod.dowsing_rod.tooltip.shift": "Right Click to Find Valuables!",
   "tooltip.practicemod.dowsing_rod.tooltip": "Press §eSHIFT§r for More Information!",
-  "tooltip.practicemod.block.speedy_block": "I am speed!"
+  "tooltip.practicemod.block.speedy_block": "I am speed!",
+
+  "sounds.practicemod.dowsing_rod_found_ore": "Dowsing Rod Found Item Sound"
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "practicemod:ebony_log"
+    }
+  },
+  "result": {
+    "item": "practicemod:ebony_wood",
+    "count": 3
+  }
+}

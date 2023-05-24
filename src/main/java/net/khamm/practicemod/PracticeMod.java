@@ -3,6 +3,8 @@ package net.khamm.practicemod;
 import net.khamm.practicemod.block.ModBlocks;
 import net.khamm.practicemod.item.ModItems;
 import net.khamm.practicemod.painting.ModPaintings;
+import net.khamm.practicemod.sound.ModSounds;
+import net.khamm.practicemod.util.ModItemProperties;
 import net.khamm.practicemod.util.ModTags;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -44,6 +46,8 @@ public class PracticeMod {
 
         ModPaintings.register(eventBus);
 
+        ModSounds.register(eventBus);
+
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
 
@@ -59,6 +63,9 @@ public class PracticeMod {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_PINK_ROSE.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WINTER_WINDOW.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CUCUMBER_PLANT.get(), RenderType.cutout());
+
+        ModItemProperties.addCustomItemProperties();
     }
 
     private void setup(final FMLCommonSetupEvent event) {
@@ -67,8 +74,4 @@ public class PracticeMod {
         });
     }
 
-    @SubscribeEvent
-    public static void onClientSetup(FMLClientSetupEvent event) {
-        ModTagsRegistration.registerBlockTags();
-    }
 }

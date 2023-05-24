@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "practicemod:netherrack_citrine_ore"
+  },
+  "result": "practicemod:citrine",
+  "experience": 0.9,
+  "cookingtime": 400
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "practicemod:item/special_bow",
+    "textures": {
+        "layer0": "practicemod:item/special_bow_pulling_2"
+    }
+}

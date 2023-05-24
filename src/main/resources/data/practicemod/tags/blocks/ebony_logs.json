@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "practicemod:ebony_log",
+    "practicemod:ebony_wood",
+    "practicemod:stripped_ebony_log",
+    "practicemod:stripped_ebony_wood"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "practicemod:endstone_citrine_ore"
+  },
+  "result": "practicemod:citrine",
+  "experience": 0.9,
+  "cookingtime": 100
+}

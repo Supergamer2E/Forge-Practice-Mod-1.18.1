@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "practicemod:deepslate_citrine_ore"
+  },
+  "result": "practicemod:citrine",
+  "experience": 0.9,
+  "cookingtime": 100
+}

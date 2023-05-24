@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X#",
+    "XOX",
+    "#X#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "X": {
+      "item": "minecraft:redstone"
+    },
+    "O": {
+      "item": "practicemod:citrine"
+    }
+  },
+  "result": {
+    "item": "practicemod:magic_dust",
+    "count": 8
+  }
+}
